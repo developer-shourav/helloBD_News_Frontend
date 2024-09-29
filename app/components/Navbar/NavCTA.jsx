@@ -14,11 +14,7 @@ const NavCTA = () => {
   return (
     <WebMaxSize>
       <div className="w-full mx-auto flex justify-between items-center py-[10px] lg:py-[30px]">
-        {/* ---------Menu For Small Devices-------- */}
-        <div className="lg:hidden">
-          <IoMenu className="text-black  p-[4px] text-4xl font-bold" />
-        </div>
-
+        
         <div>
           <Image width={169} src={siteLogo} alt="hellobd.news logo" />
         </div>
@@ -55,11 +51,6 @@ const NavCTA = () => {
           >
             <IoSearch />
           </a>
-        </div>
-
-        {/* ---------Search option For Small Devices-------- */}
-        <div className=" lg:hidden px-[8px] py-[4px] font-[300] text-gray-600 border border-black text-lg">
-          <IoSearch />
         </div>
       </div>
     </WebMaxSize>

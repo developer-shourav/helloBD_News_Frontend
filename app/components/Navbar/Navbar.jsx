@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import NavCTA from "./NavCTA";
 import NavItems from "./NavItems";
+import NavbarLargeFixed from "./NavbarLargeFixed";
+import NavSm from "./NavSm";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,12 +26,29 @@ export default function Navbar() {
 
   return (
     <header className="w-full mx-auto ">
-      {/* ----Nav Contact Section----- */}
-      <div className="w-full fixed top-0 lg:static border-b lg:border-none ">
-        <NavCTA />
+      {/* ---------------Conditional Navbar For Large Devices------------- */}
+
+      <div className="hidden lg:block">
+        {!isScrolled && (
+          <div>
+            {/* ----Nav Contact Section----- */}
+            <NavCTA />
+            {/* ------Nav Items-------- */}
+            <NavItems />
+          </div>
+        )}
+
+        {isScrolled && (
+          <div className="hidden lg:block z-50 w-full mx-auto fixed top-0 shadow">
+            <NavbarLargeFixed />
+          </div>
+        )}
       </div>
-      {/* ------Nav Items-------- */}
-      <NavItems />
+
+      {/* -----------Navbar For Small Devices---------- */}
+      <div className="z-50 lg:hidden w-full fixed top-0 shadow">
+        <NavSm />
+      </div>
     </header>
   );
 }
