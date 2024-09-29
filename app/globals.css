@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* -------------All Custom Fonts--------- */
+@font-face {
+    font-family: 'nirmala'; 
+    src: url('./fonts/nirmala.ttf') format('ttf'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .fontNirmala{
+    font-family: 'nirmala', sans-serif;
+  }
+
+@font-face {
+    font-family: 'solaimanLipi'; 
+    src: url('./fonts/SolaimanLipi.ttf') format('ttf'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  .fontSolaimanLipi{
+    font-family: 'solaimanLipi', sans-serif;
+  }
+
