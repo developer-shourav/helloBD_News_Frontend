@@ -2,41 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* -------------All Custom Fonts--------- */
 @font-face {
-    font-family: 'nirmala'; 
-    src: url('./fonts/nirmala.ttf') format('ttf'); 
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .fontNirmala{
-    font-family: 'nirmala', sans-serif;
-  }
-
-@font-face {
-    font-family: 'solaimanLipi'; 
-    src: url('./fonts/SolaimanLipi.ttf') format('ttf'); 
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-
-  .fontSolaimanLipi{
-    font-family: 'solaimanLipi', sans-serif;
-  }
-
-
-
-/*------ Styles for smooth transition------------ */
-.transition-navbar {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-family: "nirmala";
+  src: url("./fonts/nirmala.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.navbar-visible {
-  opacity: 1;
-  transform: translateY(0);
+.fontNirmala {
+  font-family: "nirmala", sans-serif;
+}
+
+@font-face {
+  font-family: "solaimanLipi";
+  src: url("./fonts/SolaimanLipi.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fontSolaimanLipi {
+  font-family: "solaimanLipi", Arial, sans-serif;
+}
+
+/* ------------Section Title Style------------- */
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-left: 18px solid #6669a7e5;
+  border-top: 36px solid transparent;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  padding: 2px 6px;
+  color: red !important;
+ 
 }

@@ -7,7 +7,7 @@ import { IoMenu } from "react-icons/io5";
 const NavSm = () => {
   return (
     <WebMaxSize>
-      <div className="w-full mx-auto flex justify-between items-center py-[10px] ">
+      <div className="w-full mx-auto flex justify-between items-center py-[10px] bg-white">
         {/* ---------Menu For Small Devices-------- */}
         <IoMenu className="text-black  p-[4px] text-4xl font-bold" />
         {/* --------Small Devices Site Logo-------- */}

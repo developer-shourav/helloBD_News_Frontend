@@ -7,7 +7,7 @@ import NavLinks from "./NavLinks";
 const NavbarLargeFixed = () => {
   return (
     <WebMaxSize>
-      <div className="w-full mx-auto flex justify-between items-center h-[58px]">
+      <div className="w-full mx-auto flex justify-between items-center h-[58px] bg-white">
         <div className="flex items-center gap-5">
           {/* ------ Website Logo --------- */}
           <div>
